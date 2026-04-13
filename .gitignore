@@ -1,0 +1,355 @@
+# ============================================
+# LTDNet Git Ignore Configuration
+# ============================================
+
+# ============================================
+# Python
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ============================================
+# IDEs and Editors
+# ============================================
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# ============================================
+# Deep Learning / Machine Learning
+# ============================================
+# Model checkpoints and weights
+*.pth
+*.pth.tar
+*.ckpt
+*.h5
+*.hdf5
+*.pb
+*.onnx
+*.tflite
+*.mlmodel
+*.caffemodel
+*.npy
+*.npz
+
+# Tensorboard logs
+tensorboard/
+tensorboard_logs/
+runs/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# ============================================
+# MMDetection / OpenMMLab Specific
+# ============================================
+# Work directories (training outputs)
+work_dirs/
+work_dirs_*/
+
+# Data directory
+data/
+dataset/
+datasets/
+
+# Pretrained models
+pretrained/
+checkpoints/
+
+# Experiment logs
+exp/
+exps/
+experiments/
+experiment/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# ============================================
+# Large Media Files
+# ============================================
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.webp
+*.ico
+*.svg
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Audio
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# Documents
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.bz2
+
+# ============================================
+# Docker
+# ============================================
+.dockerignore
+Dockerfile*
+docker-compose*
+
+# ============================================
+# OS Generated Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+# ============================================
+# Logs and Databases
+# ============================================
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+
+# ============================================
+# Specific to LTDNet
+# ============================================
+# Large checkpoint files (keep only small ones if needed)
+checkpoint-*.pth.tar
+checkpoint-*.pth
+
+# Dataset directories
+docker/AI-TODv2/
+docker/LEVIR-Ship/All Images/
+docker/LEVIR-Ship/All Annotations/
+
+# Output directories
+output/
+outputs/
+results/
+result/
+
+# Visualization outputs
+vis/
+visualization/
+visualizations/
+
+# Annotation caches
+*.pkl
+*.pickle
+
+# COCO API cache
+annotations_cache/
+
+# ============================================
+# Keep these files (exceptions)
+# ============================================
+# Do not ignore small example images for documentation
+!docs/**/*.png
+!docs/**/*.jpg
+!assets/**/*.png
+!assets/**/*.jpg
+
+# Do not ignore configuration templates
+!configs/**/*.py
+!configs_ltdnet/**/*.py
+
+# Do not ignore requirements
+!requirements/**/*.txt
+
+# Do not ignore documentation
+!*.md
+!*.rst
+!*.txt
